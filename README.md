@@ -28,23 +28,6 @@ To enable or disable looping, click on the TWC logo in the info-bar in the top-l
 
 To get looping working properly, you may (as of Chrome M66) have to go to chrome://flags#autoplay-policy (Autoplay Policy) and change it to `User gesture is required for cross-origin iframes` or `No user gesture is required`  
 
-## Screenshots
-![Screenshot 1](/screenshots/1.png)
+## Background
+Once you have downloaded the repo, go into js/MainScript.js and `change getElement('background-image').style.backgroundImage = 'url(https://i.imgur.com/4f9Qb0j.jpg';` to something `like getElement('background-image').style.backgroundImage = 'url(https://picsum.photos/1920/1080';`
 
-![Screenshot 2](/screenshots/2.png)
-
-![Screenshot 3](/screenshots/3.png)
-
-![Screenshot 4](/screenshots/4.png)
-
-![Screenshot 5](/screenshots/5.png)
-
-![Screenshot 6](/screenshots/6.png)
-
-![Screenshot 7](/screenshots/7.png)
-
-![Screenshot 8](/screenshots/8.png)
-
-![Screenshot 9](/screenshots/9.png)
-
-![Screenshot 10](/screenshots/10.png)
