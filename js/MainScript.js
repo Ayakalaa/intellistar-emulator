@@ -93,15 +93,19 @@ function setInformation(){
 
 var image = Math.floor(Math.random() * 15) + 1; // Generate a random image number between 1 and 15
 
+var image = Math.floor(Math.random() * 15) + 1; // Generate a random image number between 1 and 15
+
 function setMainBackground() {
   var backgroundElement = getElement('background-image');
-  var imageUrl = "https://raw.githubusercontent.com/Ayakalaa/intellistar-emulator/master/images/" + image + ".png";
+  var baseUrl = "https://raw.githubusercontent.com/Ayakalaa/intellistar-emulator/master/images/";
+  var imageUrl = baseUrl.concat(image.toString(), ".png");
   backgroundElement.style.backgroundImage = "url('" + imageUrl + "')";
   backgroundElement.style.backgroundSize = 'cover'; // Ensures the image covers the entire container
   backgroundElement.style.backgroundPosition = 'center'; // Centers the background image
   backgroundElement.style.width = '100%'; // Makes sure the container takes up the full width of the screen
   backgroundElement.style.height = '100vh'; // Makes sure the container takes up the full height of the screen
 }
+
 
 
 function checkStormMusic(){
