@@ -1,5 +1,5 @@
 window.CONFIG = {
-  crawl: `Due to the discontinuation of Weather Underground's API, severe weather alerts, automatic geolookup, and local doppler radar imagery are currently not avalible.`,
+  crawl: `This IntelliSTAR emulator is going to be the current replacement of the WeatherSTAR 4000 simulator as the servers for the simulator will be offline for an unknown amount of time.`,
   greeting: 'This is your weather',
   language: 'en-US', // Supported in TWC API
   countryCode: 'US', // Supported in TWC API (for postal key)

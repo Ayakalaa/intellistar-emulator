@@ -48,7 +48,7 @@ function toggleAdvancedSettings(){
 function preLoadMusic(){
   // Sets a random track to play
   var index = Math.floor(Math.random() * 15) + 1;
-  music = new Audio("assets/music/" + "proto" + ".wav");
+  music = new Audio("assets/music/" + index + ".wav");
 }
 
 /* Set the timeline page order depending on time of day and if
@@ -91,9 +91,17 @@ function setInformation(){
   setTimeout(startAnimation, 1000);
 }
 
-function setMainBackground(){
-  getElement('background-image').style.backgroundImage = 'url(https://i.imgur.com/4f9Qb0j.jpg';
+var image = Math.floor(Math.random() * 15) + 1; // Generate a random image number between 1 and 15
+
+function setMainBackground() {
+  var backgroundElement = getElement('background-image');
+  backgroundElement.style.backgroundImage = `url("C:/Users/dover/Desktop/Desktop/${image}.png")`;
+  backgroundElement.style.backgroundSize = 'cover'; // Ensures the image covers the entire container
+  backgroundElement.style.backgroundPosition = 'center'; // Centers the background image
+  backgroundElement.style.width = '100%'; // Makes sure the container takes up the full width of the screen
+  backgroundElement.style.height = '100vh'; // Makes sure the container takes up the full height of the screen
 }
+
 
 function checkStormMusic(){
   if(currentCondition.toLowerCase().includes("storm")){
