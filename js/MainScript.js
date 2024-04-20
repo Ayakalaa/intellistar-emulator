@@ -16,8 +16,8 @@ var music;
 
 window.onload = function() {
   CONFIG.addOption('zip-code', 'ZIP Code', '00000')
-  CONFIG.addOption('crawlText', 'Crawl Text', 'Text that scrolls along the bottom')
-  CONFIG.addOption('greetingText', 'Greeting Text', 'Message (or joke) that appears at the start')
+  CONFIG.addOption('crawlText', 'Crawl Text', 'Crawl Text at bottom')
+  CONFIG.addOption('greetingText', 'Greeting Text', 'Message that appears at the start')
   CONFIG.load();
   preLoadMusic();
   setMainBackground();
@@ -47,7 +47,7 @@ function toggleAdvancedSettings(){
 
 function preLoadMusic(){
   // Sets a random track to play
-  var index = Math.floor(Math.random() * 15) + 1;
+  var index = Math.floor(Math.random() * 14) + 1;
   music = new Audio("assets/music/" + index + ".wav");
 }
 
