@@ -95,7 +95,7 @@ var image = Math.floor(Math.random() * 15) + 1; // Generate a random image numbe
 
 function setMainBackground() {
   var backgroundElement = getElement('background-image');
-  backgroundElement.style.backgroundImage = `url("C:/Users/dover/Desktop/Desktop/${image}.png")`;
+  backgroundElement.style.backgroundImage = `url("https://github.com/Ayakalaa/intellistar-emulator/tree/master/images/${image}.png")`;
   backgroundElement.style.backgroundSize = 'cover'; // Ensures the image covers the entire container
   backgroundElement.style.backgroundPosition = 'center'; // Centers the background image
   backgroundElement.style.width = '100%'; // Makes sure the container takes up the full width of the screen
