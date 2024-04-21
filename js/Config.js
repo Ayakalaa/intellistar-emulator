@@ -1,6 +1,6 @@
 window.CONFIG = {
   crawl: `This IntelliSTAR emulator is going to be the current replacement of the WeatherSTAR 4000 simulator as the servers for the simulator will be offline for an unknown amount of time.`,
-  greeting: 'This is your weather',
+  greeting: 'Did I ask about Metrorail?',
   language: 'en-US', // Supported in TWC API
   countryCode: 'US', // Supported in TWC API (for postal key)
   units: 'e', // Supported in TWC API (e = English (imperial), m = Metric, h = Hybrid (UK)),

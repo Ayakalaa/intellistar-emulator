@@ -47,7 +47,7 @@ function toggleAdvancedSettings(){
 
 function preLoadMusic(){
   // Sets a random track to play
-  var index = Math.floor(Math.random() * 14) + 1;
+  var index = Math.floor(Math.random() * 15) + 1;
   music = new Audio("assets/music/" + index + ".wav");
 }
 
@@ -91,9 +91,9 @@ function setInformation(){
   setTimeout(startAnimation, 1000);
 }
 
-var image = Math.floor(Math.random() * 15) + 1; // Generate a random image number between 1 and 15
+var image = Math.floor(Math.random() * 13) + 1; // Generate a random image number between 1 and 15
 
-var image = Math.floor(Math.random() * 15) + 1; // Generate a random image number between 1 and 15
+var image = Math.floor(Math.random() * 13) + 1; // Generate a random image number between 1 and 15
 
 function setMainBackground() {
   var backgroundElement = getElement('background-image');
